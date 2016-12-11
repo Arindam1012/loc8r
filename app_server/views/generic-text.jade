@@ -4,12 +4,7 @@ block content
   #banner.page-header
     .row
       .col-md-6.col-sm-12
-        h1=title
+        h1= title
   .row
     .col-md-6.col-sm-12
-      p
-      | Loc8r was created to help people find restaurants nearby along with all necessary details.
-      | <br> <br/>
-      | We show the updated data about any restaurant listed in this site and we ensure that the information is accurate and complete.
-      | <br><br/>
-      | <br><br/>
+      p !{(context).replace(/\n/g, '<br/>')}
