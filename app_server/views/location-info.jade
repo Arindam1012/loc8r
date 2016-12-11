@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 KFC
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Spot 18 Mall, Shivar Chowk, Rahatani, Pimple Saudagar, Pune
+            .panel.panel-primary
+              .panel-heading
+                h2.panel-title Opening hours
+              .panel-body
+                p Monday - Sunday : 11:00am - 11:00pm
+            .panel.panel-primary
+              .panel-heading
+                h2.panel-title Contact Info
+              .panel-body
+                p 020 30162053
+            .panel.panel-primary
+              .panel-heading
+                h2.panel-title Average Cost
+              .panel-body
+                p Rs550 for two (approx.)
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=18.593465,73.786001&zoom=17&size=400x350&sensor=false&markers=18.593465,73.786001&scale=2')
+            
